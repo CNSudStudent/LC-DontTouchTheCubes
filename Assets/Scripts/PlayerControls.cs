@@ -44,4 +44,9 @@ public class PlayerControls : MonoBehaviour
             Mathf.Clamp(transform.position.z, -30f, 30f)
         );
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        SceneManager.LoadScene(0);
+    }
 }
